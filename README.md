@@ -16,5 +16,7 @@ In the front end, the team has decided to interface with the user with a webpage
 For our project we will be expanding upon the ML algorithims in the Kaggle notebooks. Additonally, we will utilze Github for libraries and other sources. 
 ## Sprint 2 
 ### Definition of Architecture
+![IPFDataFlowChart (1)](https://user-images.githubusercontent.com/67568998/96325132-5ad04400-0ff3-11eb-910b-20db1e503233.png)
+
 ### Technology Selection and Justification
 ### Functional Demonstration of Major User Story
