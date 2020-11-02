@@ -22,3 +22,4 @@ The more important backend is the analysis of the dicom images. We currently als
 ### Functional Demonstration of Major User Story
 https://kellenbj.github.io/EC601A1-Kaggle-IPF-group09/
 This website is where we will be posting and updating for the forseeable future. 
+178.128.191.113 is IP address for live website, currently under development!
