@@ -18,7 +18,7 @@ For our project we will be expanding upon the ML algorithims in the Kaggle noteb
 
 ### Technology Selection and Justification
 So far we have tested two backend regression models for the Forced Vital Capacity, a simple Logistic Regression and a more complex Quantile regression model. Both produced acceptable results but for our initial web page we are implementing the Logistic Regression to produce results.
-The more important backend is the analysis of the dicom images. We currently also have a working pre-processor for lung fuction using the Hounsfield scale. 
+The more important backend is the analysis of the dicom images. We currently also have a working pre-processor for lung fuction using the Hounsfield scale. Models for efficientnets_B6 and ResNet have been trained, and will be retrained using segmented dicom images in order to lower the training error. 
 ### Functional Demonstration of Major User Story
 https://kellenbj.github.io/EC601A1-Kaggle-IPF-group09/
 This website is where we will be posting and updating for the forseeable future. 
