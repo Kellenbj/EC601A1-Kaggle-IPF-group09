@@ -23,3 +23,14 @@ The more important backend is the analysis of the dicom images. We currently als
 https://kellenbj.github.io/EC601A1-Kaggle-IPF-group09/
 This website is where we will be posting and updating for the forseeable future. 
 178.128.191.113 is IP address for live website, currently under development!
+
+### Method and Procedures for CT Scan Image Processing 
+The two methods of vaible image processing for this project are: "Image-to-Image" processing and "Image-to-Data processing". At it's core, both methods utilze the Hounsfield Unit (HU) measure of radiodensity. "Image-to-Image" Processing was concluded to be the best method for this project because of it's ability to better portray the lung status to the main user (visual dipictions). In addtion, Image-to-Image better complies with the pre-trained ML network as compared to the raw HU matrix that Image-to-Data would output.
+
+#### Hounsfield Unit (HU)
+The Hounsfield Unit is a dimensionless unit in CT scans which measures radiodensity. This is a universal and standardized form of measurment in computed tomography (CT). HU calculation is avaialbe in the pydicom package. The HU can be calculated from the pixel data with a DICOM image using the following formula:
+![HU](https://user-images.githubusercontent.com/67568998/100667177-26f17980-3328-11eb-86e4-9c175b9cc5ec.JPG)
+
+#### Image-to-Data Method (Peak Detection) 
+The original plan for image processing is to convert the CT scan into a unique scale or plot where the convolutional system use a peak detect method. Since the local maxima for the scale is air from the lungs, we can use peak detect and guage the peak intensity with other CT scans to determine lung functionality. Below is a scale of landmarks as a function to the greyscale intensity provided by radiopedia.org, and a graphical representation of that scale. 
+![scale](https://user-images.githubusercontent.com/67568998/100674549-4f32a580-3333-11eb-99b1-ce0b8beb44c4.JPG)
