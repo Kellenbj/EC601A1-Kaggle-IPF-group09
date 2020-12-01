@@ -34,3 +34,11 @@ The Hounsfield Unit is a dimensionless unit in CT scans which measures radiodens
 #### Image-to-Data Method (Peak Detection) 
 The original plan for image processing is to convert the CT scan into a unique scale or plot where the convolutional system use a peak detect method. Since the local maxima for the scale is air from the lungs, we can use peak detect and guage the peak intensity with other CT scans to determine lung functionality. Below is a scale of landmarks as a function to the greyscale intensity provided by radiopedia.org, and a graphical representation of that scale. 
 ![scale](https://user-images.githubusercontent.com/67568998/100674549-4f32a580-3333-11eb-99b1-ce0b8beb44c4.JPG)
+
+#### Image-to-Image Method
+The image-to-image method utilzes segmentations of the orignal CT scan. This method best fits the pre-trained convolutional network, as opposed to image-to-data which would require redevlopment of an already sophistcated network. An addtional desired aspect in the image-to-image method is outputting of processed images. This allows the radiologist or other user to visually identifiy lung abnormalities together with the convolutional network. 
+Initially, the segmentation method was rather simple, but tedious. Each 2D slice of the CT scan would undergo a standardized greyscale conversion. The problem with this method is dependent on CT scans with contrast while some lacked the contrast; therefore there are some discrepances within the dataset. It was later when the watershed segmentation was utlized and concluded to be the best course of action. The watershed segmenter treats the greyscale as a topgraphic map with the brightness representing heights. To process this markers are used to identify slices of the outer ridge and slices of the lung tissue. The markers will then be superimposed and processed to create the image. The only con is the tendency for the watershed to over segment which should be addressed if there are discrepancies within the data.  
+
+
+
+
