@@ -1,7 +1,7 @@
 # Idiopathic Pulmonary Fibrosis Predictor
 This project will use image processing and machine learning systems to assist in devloping a prognosis for Idiopathic Pulmonary Fibrosis (IPF). This was inspired by the Kaggle competiton, "OSIC Pulmonary Fibrosis Progression".
 ### Product Mission
-Our goal is to create an architecture that analyzes the CT scans (DICOM images) of the lungs and other metadata which will be used by physician/radiologist to reach a prognosis on the state of the patient's lung tissue.
+Our goal is to create an architecture that analyzes the CT scans (DICOM images) of the lungs and other metadata which will be used by physician/radiologist to reach a diagnosis on the state of the patient's lung tissue.
 The User will ideally interface with an app or webpage that will ask to upload an image and fill out medical data. 
 ### MVP and MVP User Stories 
 "As a patient I would like an easy to read and understandable score."
@@ -20,7 +20,7 @@ For our project we will be expanding upon the ML algorithims in the Kaggle noteb
 So far we have tested two backend regression models for the Forced Vital Capacity, a simple Logistic Regression and a more complex Quantile regression model. Both produced acceptable results but for our initial web page we are implementing the Logistic Regression to produce results.
 The more important backend is the analysis of the dicom images. We currently also have a working pre-processor for lung fuction using the Hounsfield scale. Models for efficientnets_B6 and ResNet have been trained, and will be retrained using segmented dicom images in order to lower the training error. 
 ### Functional Demonstration of Major User Story
-https://kellenbj.github.io/EC601A1-Kaggle-IPF-group09/
+https://pf-project-ynbq9.ondigitalocean.app/
 This website is where we will be posting and updating for the forseeable future. 
 178.128.191.113 is IP address for live website, currently under development!
 
